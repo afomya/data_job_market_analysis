@@ -57,15 +57,21 @@ The analysis showed that cloud and modern data engineering technologies such as 
 
 ![Skills Most Associated with Remote Data Roles](2_remote_skills.png)
 
+## Predictive Modeling
+
+A logistic regression model was trained to predict whether a job posting was remote using technical skills and job role information as features. Skills were transformed into binary indicator variables using multi-label encoding, while job roles were one-hot encoded and included as additional predictors.
+
+The model achieved moderate predictive performance (ROC-AUC ≈ 0.63), indicating that technical skill requirements and role information contain meaningful signal related to remote work patterns. However, remote job postings represented less than 10% of the dataset, creating a significant class imbalance that likely limited overall predictive accuracy.
+
+Coefficient analysis showed that technologies associated with cloud infrastructure, collaboration tools, and machine learning workflows were among the strongest positive predictors of remote work. In contrast, several traditional enterprise and business-focused technologies were more strongly associated with non-remote postings.
+
+![Positive Predictors of Remote Jobs](3_remote_positive_predictors.png)
+
 ## Key Findings
 
 The analysis revealed clear differences in skill requirements across the three largest data roles: Data Analyst, Data Engineer, and Data Scientist. Data Analyst postings were more strongly associated with business intelligence and reporting tools such as Excel, Tableau, and Power BI, while Data Engineer roles emphasized cloud and infrastructure technologies including AWS, Spark, Kafka, and Airflow. Data Scientist roles showed stronger associations with programming and machine learning tools such as Python, Pandas, PyTorch, and Hugging Face.
 
 Remote work analysis showed that modern engineering and cloud-based technologies appeared more frequently in remote job postings. Skills such as AWS, Databricks, Airflow, Slack, Zoom, and Pandas were positively associated with remote roles, while more traditional enterprise and business-focused tools showed weaker associations with remote work.
-
-A logistic regression model was also trained to predict whether a job posting was remote using skill and role information. While the model achieved moderate predictive performance (ROC-AUC ≈ 0.63), it successfully identified meaningful patterns linking modern engineering workflows and collaborative cloud technologies with remote-friendly jobs. However, remote postings represented less than 10% of the dataset, creating a noticeable class imbalance that likely limited predictive performance.
-
-![Positive Predictors of Remote Jobs](3_remote_positive_predictors.png)
 
 Overall, the project suggests that the modern data job market is highly specialized, with distinct technical ecosystems emerging across analytics, engineering, and data science roles. At the same time, remote opportunities appear to be more concentrated in cloud-driven and engineering-heavy areas of the field.
 
