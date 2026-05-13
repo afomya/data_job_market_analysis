@@ -6,12 +6,12 @@ This project analyzes nearly 785,000 data-related job postings from 2023 to expl
 
 ## Tools & Technologies
 
-Python
-Pandas — data cleaning and preprocessing
-NumPy — numerical operations
-Matplotlib & Seaborn — data visualization
-Scikit-learn — logistic regression modeling and evaluation
-Jupyter Notebook — exploratory analysis and modeling
+- Python
+- Pandas — data cleaning and preprocessing
+- NumPy — numerical operations
+- Matplotlib & Seaborn — data visualization
+- Scikit-learn — logistic regression modeling and evaluation
+- Jupyter Notebook — exploratory analysis and modeling
 
 
 ## Data Quality Assesment
