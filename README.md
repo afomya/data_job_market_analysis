@@ -75,6 +75,6 @@ Several limitations should be considered when interpreting the results. Salary-r
 
 ## Data Source
 
-This project uses the "data_jobs"["data_jobs"](https://huggingface.co/datasets/lukebarousse/data_jobs) dataset available on Hugging Face. The dataset contains approximately 785,000 job postings collected throughout 2023 and includes information related to job titles, skills, locations, remote work status, schedule type, and salary data where available.
+This project uses the ["data_jobs"](https://huggingface.co/datasets/lukebarousse/data_jobs) dataset available on Hugging Face. The dataset contains approximately 785,000 job postings collected throughout 2023 and includes information related to job titles, skills, locations, remote work status, schedule type, and salary data where available.
 
 
