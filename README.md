@@ -1,8 +1,8 @@
-# Data Job Market ROI
+# Data Job Market 
 
-## Questions
-1. Which skills appear most often by role?
+## Primary Question
 
+Can job characteristics and skill requirements predict whether a data job is remote?
 
 ## Data Quality Assesment
 
