@@ -15,7 +15,7 @@ Skill-related fields remained highly usable, with only ~14.9% missing values in 
 The dataset spans the full 2023 calendar year and is primarily concentrated in three major roles: Data Analyst, Data Engineer, and Data Scientist, which became the main focus of subsequent analyses.
 
 
-# Processing and Analysis
+## Processing and Analysis
 
 The job_skills column was originally stored as strings instead of actual Python lists, so the skills first had to be parsed and cleaned before analysis. After converting the values into lists, the column was exploded into a separate dataframe (skills_df) where each row represented one skill tied to a job posting. Skills were also standardized by converting them to lowercase and removing extra whitespace.
 
@@ -29,12 +29,22 @@ To better understand how technical requirements differ across careers, the analy
 
 A heatmap was then created using normalized skill frequencies to compare the most common skills across these roles. The results showed clear differences between them:
 
-![Skill Demand by Role](skill_demand_by_role_hm.png)
+![Skill Demand by Role](1_skill_demand_by_role_hm.png)
 
 Data Analysts were more associated with Excel, Tableau, and Power BI
 Data Engineers showed stronger demand for AWS, Spark, Kafka, and Airflow
 Data Scientists were more closely tied to Python, R, and machine learning tools
 
 This analysis helped highlight how different areas of the data field require different technical skill sets.
+
+## Remote Work Analysis
+
+Remote work patterns were analyzed across the three largest job categories in the dataset: Data Analyst, Data Engineer, and Data Scientist. The percentage of remote postings was calculated for each role, showing noticeable differences in how frequently remote work appeared across areas of the data industry.
+
+To better understand the relationship between skills and remote work, skill frequencies were compared between remote and non-remote job postings. Skill counts were normalized within each group to account for differences in total posting volume, allowing for a fair comparison of how commonly each skill appeared in remote positions.
+
+The analysis showed that cloud and modern data engineering technologies such as AWS, Snowflake and Airflow appeared more frequently in remote job postings.
+
+![Skills Most Associated with Remote Data Roles](2_remote_skills.png)
 
 
